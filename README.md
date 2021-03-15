@@ -98,3 +98,8 @@ Full Command Example:
 java -jar elevator.jar '{"startFloor": 5, "carLoads": [[3,1,4],[2,8,4],[4,6,4,9]]}'
 ```
 
+### How to Run the unit tests
+```
+./gradlew clean test
+```
+

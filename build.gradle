@@ -18,6 +18,14 @@ group = 'org.example'
 version = '1.0-SNAPSHOT'
 description = 'elevator'
 
+test {
+    useJUnitPlatform()
+    outputs.upToDateWhen { false }
+    testLogging {
+        events "passed", "skipped", "failed", "standardOut", "standardError"
+    }
+}
+
 jar {
     archiveFileName = 'elevator.jar'
     manifest {
